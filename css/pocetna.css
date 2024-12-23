@@ -1,0 +1,52 @@
+.navbar {
+    border: 1px solid black;          
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    display: flex;        /* Postavlja stavke horizontalno */
+    padding: 0;           /* Uklanja unutrašnji razmak */
+    margin: 0;   
+    
+    
+}
+
+.lista {
+    
+    display: inline-block;        /* Postavlja stavke horizontalno */
+    margin-top: 30px;
+    color: black;
+    margin-left: 900px; 
+    gap: 5px ;   
+}
+
+
+.Naslov {
+    font-size: 70px;
+}
+
+.info2{
+   margin-left: 900px;
+}
+
+
+body {
+    background-color: gray;
+    color: white;
+    font-family: 'Audiowide';
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.footer {
+    border: 1px solid black; 
+    padding: 0;          
+    margin: 0;           
+    background-color: darkslategray;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+}
+
