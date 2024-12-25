@@ -4,8 +4,7 @@
     color: black;
     box-sizing: border-box;
     display: flex;        /* Postavlja stavke horizontalno */
-    padding: 0;           /* Uklanja unutrašnji razmak */
-    margin: 0;   
+       
     
     
 }
@@ -72,12 +71,47 @@ body {
 
 .footer {
     border: 1px solid black; 
-    padding: 0;          
-    margin: 0;           
+             
     background-color: darkslategray;
     color: white;
     box-sizing: border-box;
     display: flex;
     list-style: none;
 }
+
+
+form {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    width: 200px; /* Širina select-a */
+    padding: 10px; /* Unutrašnji prostor */
+    font-size: 16px; /* Veličina teksta */
+    color: #333; /* Boja teksta */
+    border: 2px solid #007BFF; /* Plavi okvir */
+    border-radius: 8px; /* Zaobljeni uglovi */
+    background-color: #f0f8ff; /* Lagano plava pozadina */
+    cursor: pointer; /* Pointer kada prelazimo mišem */
+    transition: all 0.3s ease-in-out; /* Glatki efekat prijelaza */
+}
+
+/* Efekt pri hover-u */
+select:hover {
+    background-color: #e6f7ff; /* Svjetlije plava */
+    border-color: #0056b3; /* Tamnija plava za okvir */
+}
+
+/* Efekt pri fokus-u */
+select:focus {
+    outline: none; /* Uklanja defaultni fokus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Plavo svjetlo oko select-a */
+}
+
 
