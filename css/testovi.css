@@ -104,3 +104,133 @@ body {
     list-style: none;
 }
 
+.testovi-buttons {
+    display: flex; /* Dugmad u redu */
+    justify-content: center; /* Centriranje dugmadi */
+    gap: 20px; /* Razmak između dugmadi */
+    margin-top: 30px; /* Odmak od vrha */
+}
+
+.testovi-buttons button {
+    background: linear-gradient(to right, #0073e6, #33adff); /* Plavi gradient */
+    color: white; /* Bijeli tekst */
+    border: none; /* Bez ivica */
+    border-radius: 10px; /* Zaobljeni uglovi */
+    padding: 15px 30px; /* Unutrašnji razmaci */
+    font-size: 18px; /* Veličina teksta */
+    cursor: pointer; /* Ruka na hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Blaga sjena */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Animacija za hover */
+}
+
+.testovi-buttons button:hover {
+    transform: translateY(-5px); /* Blagi pomak gore */
+    background: linear-gradient(to right, #005bb5, #0073e6); /* Tamniji gradient na hover */
+}
+
+.testovi-buttons button:active {
+    transform: translateY(0); /* Dugme se vraća kad se klikne */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Manja sjena na klik */
+}
+
+/* Navbar stil (pretpostavljam da već imaš ovo) */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Visina navbar-a */
+    background-color: rgba(51, 51, 51, 0.8);
+    z-index: 1000; /* Drži navbar iznad svih elemenata */
+}
+
+/* Stil za dugmad container */
+.testovi-buttons {
+    display: flex;
+    justify-content: center; /* Centriraj dugmad horizontalno */
+    gap: 20px; /* Razmak između dugmadi */
+    margin-top: 80px; /* Pomjeri ispod navbar-a (visina navbar-a + 20px) */
+}
+
+/* Stil za dugmad */
+.testovi-buttons button {
+    background: linear-gradient(to right, #0073e6, #33adff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.testovi-buttons button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #005bb5, #0073e6);
+}
+
+.testovi-buttons button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Stil za container svih dugmadi */
+.testovi-buttons {
+    display: flex;
+    flex-direction: column; /* Postavlja elemente vertikalno */
+    align-items: center; /* Centriranje elemenata */
+    gap: 20px; /* Razmak između sekcija */
+    margin-top: 80px; /* Pomiče sve ispod navbar-a */
+}
+
+/* Stil za svaki blok dugme + opis */
+.button-info {
+    text-align: center; /* Centriranje sadržaja */
+    width: 100%; /* Širina bloka */
+    max-width: 400px; /* Maksimalna širina bloka */
+}
+
+/* Stil za dugmad */
+.button-info button {
+    background: linear-gradient(to right, #0073e6, #33adff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px; /* Veće dimenzije dugmeta */
+    font-size: 20px; /* Veličina fonta */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    width: 100%; /* Dugme pokriva cijelu širinu bloka */
+}
+
+/* Hover efekat za dugmad */
+.button-info button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #005bb5, #0073e6);
+}
+
+/* Tekst ispod dugmeta */
+.button-info p {
+    margin-top: 10px; /* Razmak između dugmeta i opisa */
+    font-size: 16px;
+    color: #333; /* Tamniji tekst */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Ovo osigurava da stranica zauzme cijelu visinu ekrana */
+}
+
+.autoskole-page {
+    flex: 1;  /* Ovo omogućava da se sadržaj proširi da popuni dostupni prostor */
+}
+
+.footer {
+    margin-top: auto; /* Ovo pomjera footer prema dnu stranice */
+    padding: 20px;
+    text-align: center;
+}

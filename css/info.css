@@ -149,3 +149,19 @@ body {
 .informacije3 {
     animation-delay: 1s; /* Kreće nakon 1 sekunde */
 }
+
+/* Navbar stil (pretpostavljam da već imaš ovo) */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Visina navbar-a */
+    background-color: rgba(51, 51, 51, 0.8);
+    z-index: 1000; /* Drži navbar iznad svih elemenata */
+}
+.footer {
+    margin-top: auto; /* Ovo pomjera footer prema dnu stranice */
+    padding: 20px;
+    text-align: center;
+}

@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "../css/autoskole.css">
+    <link rel="stylesheet" href="../css/autoskole.css">
     <title>Auto Skole | DriverBuddy</title>
 
-    <div class = "navbar">
-           <h1>DriverBuddy</h1>
-            
-           <div class = "lista">
-               
-               <a href ="pocetna.html" >Naslovna</a>
-                <a href ="testovi.html" >Testovi</a>
-                <a href ="autoskole.html" >Auto Skole</a>
-                <a href ="info.html" >Info</a>
-               
-           </div>
+    <div class="navbar">
+        <h1>DriverBuddy</h1>
+        <div class="lista">
+            <a href="pocetna.html">Naslovna</a>
+            <a href="testovi.html">Testovi</a>
+            <a href="autoskole.html">Auto Skole</a>
+            <a href="info.html">Info</a>
         </div>
+    </div>
 </head>
 
 <body>
-    <div class = "autoskole1">
-        <h2>Auto Skole Dostupne u BiH</h2>
-        <form>
+    <div class="autoskole-page">
+        <h2>Auto Škole Dostupne u BiH</h2>
+        <div class="select-wrapper">
             <label for="options">Izaberi Grad:</label>
             <select id="options">
-                <option value="opcija1">Sarajevo</option>
-                <option value="opcija2">Zenica</option>
-                <option value="opcija3">Mostar</option>
+                <option value="sarajevo">Sarajevo</option>
+                <option value="zenica">Zenica</option>
+                <option value="mostar">Mostar</option>
+                <option value="tuzla">Tuzla</option>
+                <option value="banjaLuka">Banja Luka</option>
+                <option value="bihac">Bihać</option>
+                <option value="brcko">Brčko</option>
+                <option value="bijeljina">Bijeljina</option>
             </select>
-        </form>
-        
+        </div>
+
+        <!-- Grid za prikaz autoškola -->
+        <div id="grid" class="grid-container">
+            <!-- Ovdje će dinamički JS puniti autoškole -->
+        </div>
     </div>
 
-    <div class = "footer">
-        <div class = "info1">
-
+    <div class="footer">
+        <div class="info1">
             <h2>Kontakt:</h2>
             <ul>
                 <li>+387 62 345 241</li>
@@ -44,14 +49,14 @@
             </ul>
         </div>
 
-        <div class = "info2">
-
+        <div class="info2">
             <h2>DriverBuddy</h2>
             <ul>
                 <li>DriverBuddy 2024</li>
             </ul>
         </div>
-
     </div>
+
+    <script src="../js/autoskole.js"></script>
 </body>
 </html>
