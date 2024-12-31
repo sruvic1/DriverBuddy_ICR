@@ -233,3 +233,70 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gray;
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    padding-top: 70px; /* Osigurava prostor za navbar */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 60px; /* Visina navigacije */
+}
+
+/* Grid za auto škole */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Prilagođava broj stupaca */
+    gap: 20px; /* Razmak između grid elemenata */
+    margin: 20px auto; /* Razmak između navbar-a i grida */
+    padding: 20px;
+    max-width: 1200px; /* Maksimalna širina */
+    background-color: #333;
+    border-radius: 8px;
+}
+
+/* Stil za pojedinačne grid iteme */
+.grid-item {
+    background-color: white
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animacija za grid item */
+.grid-item:hover {
+    transform: translateY(-10px); /* Pomak prema gore */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Naslov iznad grida */
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+

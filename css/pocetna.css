@@ -125,3 +125,48 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid item */
+.grid-item {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.grid-item h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    color: #333;
+    font-size: 1em;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+.footer {
+    margin-top: auto; /* Ovo pomjera footer prema dnu stranice */
+    padding: 20px;
+    text-align: center;
+}
+
