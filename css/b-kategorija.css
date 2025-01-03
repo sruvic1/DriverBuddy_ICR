@@ -1,0 +1,350 @@
+/* Ukloni margine i padding iz tijela i cijele stranice */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Audiowide';
+    color: white;
+    text-align: center;
+}
+
+/* Navbar stil */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.lista {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Sadržaj stranice B Kategorija */
+.test-category h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 80px; /* Razmak od navbar-a */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+
+/* Footer stil */
+.footer {
+    border: 1px solid black; 
+    padding: 0;          
+    margin: 0;           
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+}
+
+.footer {
+    margin-top: auto; /* Ovo pomjera footer prema dnu stranice */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto; /* Ovo pomjera footer prema dnu stranice */
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Osnovna stilizacija body i drugih elemenata */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide';
+}
+
+body {
+    color: white;
+    text-align: center;
+}
+
+/* Navbar stil */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.lista {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Sadržaj stranice B Kategorija */
+.test-category h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 80px; /* Razmak od navbar-a */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+
+/* Veliki grid box */
+.grid-box {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;  /* Ponekad samo jedna kolona za sadržaj */
+    gap: 20px;
+    background-color: #444;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ddd;
+    opacity: 0; /* Početna nevidljivost za fade in efekat */
+    animation: fadeIn 2s forwards; /* Fade in animacija */
+}
+
+/* Animacija za fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.grid-box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.grid-box p {
+    font-size: 18px;
+    color: #aaa;
+}
+
+/* Hover efekat za grid box */
+.grid-box:hover {
+    transform: scale(1.05); /* Blagi uvećanje kada se kursor postavi na box */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Intenzivnija senka */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Footer stil */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    padding-top: 80px; /* Ovdje možete podesiti odgovarajuću visinu za vaš navbar */
+}
+
+/* Za grid item */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.grid-item h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    color: white;
+    font-size: 1em;
+}
+
+/* Za grid-container možete dodati margin-top ili padding-top ako je potrebno */
+.grid-container {
+    margin-top: 80px; /* Osigurava da grid ne preklapa navbar */
+}
+
+html, body {
+    height: 100%; /* Podesi visinu cijele stranice */
+    margin: 0; /* Uklanja margine na stranici */
+    display: flex; /* Flexbox za raspored svih elemenata */
+    flex-direction: column; /* Postavlja sve u vertikalnu kolonu */
+}
+
+body {
+    padding-top: 80px; /* Povećaj ovu vrijednost ovisno o visini navbar-a */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;  /* Omogućava rastezanje stranice */
+}
+
+.footer {
+    margin-top: auto; /* Premješta footer prema dnu stranice */
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Stilizacija grid-container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px; /* Margin ako želite još podignuti grid od navbar-a */
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.grid-item {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+/* Rješenje za grid boxove sa hover efekatom i fade-in */
+.grid-item:hover {
+    transform: scale(1.05);
+    background-color: #007bff;
+    color: #fff;
+}
+
+.footer {
+    position: relative;
+    bottom: 0; /* Footer ostaje na dnu */
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+
+.footer {
+    margin-top: auto; /* Premješta footer prema dnu stranice */
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}

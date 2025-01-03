@@ -234,3 +234,12 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+
+
+
+/* Ako je potrebno da navbar ne pokrije sadržaj kada je fiksiran */
+body {
+    padding-top: 80px;  /* Povećaj margine tako da cela stranica ne bude preklopljena navbar-om */
+}
+

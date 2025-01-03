@@ -5,6 +5,7 @@ body, html {
     box-sizing: border-box; /* Da svi paddingi i borderi ulaze u dimenzije elementa */
 }
 
+/* Navbar */
 .navbar {
     position: fixed; /* Fiksira na vrh */
     top: 0; /* Nema razmaka na vrhu */
@@ -17,7 +18,6 @@ body, html {
     padding: 10px 0; /* Visina navigacije */
     z-index: 1000; /* Prioritet iznad ostalih elemenata */
     opacity: 0.8;
-    
 }
 
 /* Linkovi unutar navbar-a */
@@ -28,7 +28,6 @@ body, html {
     padding: 10px 15px; /* Razmak oko teksta linka */
     transition: background-color 0.3s ease; /* Efekat pri hover-u */
 }
-
 
 .navbar a:hover {
     background-color: #575757; /* Sivo pozadina prilikom hover-a */
@@ -416,62 +415,32 @@ body {
 }
 
 
-
-
-
-
-/* Navbar stil */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: center; /* Centrira sadržaj horizontalno */
-    align-items: center; /* Centrira sadržaj vertikalno */
-    padding: 15px 0;
-    z-index: 1000;
+/* Osnovni stil za cijelu stranicu */
+body {
+    margin: 0;  /* Uklanja default margine */
+    padding: 0; /* Uklanja default padding */
+    padding-top: 80px;  /* Pomak cijelog sadržaja ispod navbar-a */
 }
 
-.lista {
-    display: flex; /* Linkove stavlja u horizontalni red */
-    gap: 20px;  /* Razmak između linkova */
+/* U slučaju da želimo dodati padding na početak svake stranice */
+section {
+    margin-top: 20px;  /* Dodaje razmak između različitih sekcija */
+    padding: 20px;
 }
 
+/* Stilizacija navbar-a */
+
+/* Stilizacija linkova u navbar-u */
 .navbar a {
     color: white;
-    font-size: 18px;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 15px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
 }
 
-/* Hover efekat na linkovima */
+/* Hover efekat na linkove u navbar-u */
 .navbar a:hover {
     background-color: #575757;
     border-radius: 5px;
-}
-
-
-/* Margin-top za naslov da bude ispod navbar-a */
-.Naslov {
-    margin-top: 80px;  /* Povećaj ovu vrednost ako navbar zauzima veći prostor */
-    text-align: center;
-}
-
-/* Ostale stilizacije za navbar (ako su potrebne) */
-.navbar {
-    padding: 15px 0;
-    position: fixed;  /* Ostaviti navbar fiksiranim na vrhu */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;  /* Da bude iznad svih drugih elemenata */
-}
-
-/* Ako je potrebno da navbar ne pokrije sadržaj kada je fiksiran */
-body {
-    padding-top: 80px;  /* Povećaj margine tako da cela stranica ne bude preklopljena navbar-om */
 }
